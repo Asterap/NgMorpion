@@ -1,0 +1,51 @@
+
+#context {
+  border: 2px solid white;
+  margin: 0 auto;
+}
+
+.square {
+  display: inline-block;
+  vertical-align: top;
+  color: black;
+  width: 33.3333%;
+  height: 33.3333%;
+}
+
+.square:nth-child(odd) {
+  background: #808080;
+  color: white;
+}
+
+
+.square.clickedByPlayerOne:after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  content: url("../../../assets/img/cancel-music.png");
+}
+
+.square.clickedByPlayerTwo:after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  content: url("../../../assets/img/circle-shape-outline.png");
+}
+
+.win{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #91baff;
+  color:white;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Calibri;
+}

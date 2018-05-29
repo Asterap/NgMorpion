@@ -1,0 +1,5 @@
+<div #context id="context">
+  <div #square *ngFor="let i of squareNumber" id="{{i}}" class="square" (click)="gameObserver(i)"></div>
+</div>
+<div class="win" *ngIf="playerOneVictory">Player One Win ! </div>
+<div class="win" *ngIf="playerTwoVictory">Player Two Win ! </div>
